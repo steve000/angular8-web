@@ -1,0 +1,28 @@
+<div class="post-detail-container">
+	<div class="img-container">
+		<img src="assets/imgs/headline.png" alt="光刻机">
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<h3>{{ post.title }}</h3>
+		</div>
+	</div>
+	<div class="row post-info">
+		<div class="col-md-3">
+			<span class="fa fa-user"></span>{{ post.author }}
+		</div>
+		<div class="col-md-3">
+			<span class="fa fa-clock-o"></span>{{ post.postTime }}
+		</div>
+		<div class="col-md-3">
+			<span class="fa fa-hand-pointer-o"></span>{{'click' | translate}}：{{ post.readTimes }}
+		</div>
+		<div class="col-md-3">
+			<span class="fa fa-comment"></span>{{'comment' | translate}}：{{ post.commentTimes }}
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 post-content" [innerHTML]="post.text | sanitizeHtml">
+		</div>
+	</div>
+</div>

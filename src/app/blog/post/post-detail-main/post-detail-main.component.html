@@ -1,0 +1,12 @@
+<div class="container post-detail-main-container" [@flyIn]="'active'">
+    <div class="row">
+        <div class="col-md-9">
+            <post-detail></post-detail>
+            <sign-in></sign-in>
+            <comment-list></comment-list>
+        </div>
+        <div class="col-md-3">
+            <user-info panelTitle="{{'authorInfo'|translate}}" (follow)="doFollow()"></user-info>
+        </div>
+    </div>
+</div>
