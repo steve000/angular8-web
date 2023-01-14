@@ -75,6 +75,6 @@
     "tslint": "5.11.0",
     "typescript": "3.4.5",
     "webpack-bundle-analyzer": "3.0.3",
-    "webpack-cli": "3.2.1"
+    "webpack-cli": "3.3.12"
   }
 }
